@@ -86,7 +86,7 @@ form {
 
 .dashboard {
     padding: 20px;
-    margin-top: 50px;
+    margin-top: a50px;
     width: 600px;
     box-sizing: border-box;
 }
@@ -125,7 +125,62 @@ form {
     box-sizing: border-box;
 }
 
+.profile-details {
+    border: 2px solid #35424a;
+    justify-self: center;
+    margin-top: 30px;
+    width: 600px;
+    height: 220px;
+    box-sizing: border-box;
+}
 
+.profile-details h3 {
+    text-align: center;
+    background: #35424a;
+    padding: 20px;
+    color: #FF9966;
+}
+
+.profile-details p {
+    color: grey;
+}
+
+.align-profile {
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+.profile-highest-user {
+    border: 2px solid #35424a;
+    justify-self: center;
+    margin-top: 30px;
+    width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.profile-highest-user h3 {
+    text-align: center;
+    background: #35424a;
+    padding: 20px;
+    color: #FF9966;
+}
+
+.profile-most-recent {
+    border: 2px solid #35424a;
+    justify-self: center;
+    margin-top: 30px;
+    width: 600px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.profile-most-recent h3 {
+    text-align: center;
+    background: #35424a;
+    padding: 20px;
+    color: #FF9966;
+}
 
 .form-title {
     margin-bottom: 10px;
