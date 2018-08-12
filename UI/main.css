@@ -300,5 +300,26 @@ footer {
     .profile-most-recent {
         width: 350px;
     }
+
+    .dashboard {
+        width: 350px;
+    }
+
+    .question-field {
+        margin-left: 10px;
+        width: 300px;
+    }
+
+    .dashboard-button button {
+        margin-left: 205px;
+    }
+
+    .current-question {
+        width: 350px;
+    }
+
+    .recent-questions {
+        width: 350px;
+    }
     
 }
