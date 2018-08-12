@@ -272,3 +272,33 @@ footer {
 .footer {
     margin-top: 116px;
 }
+
+@media only screen and (max-width: 620px) {
+    body {
+        border: 1px solid red;
+    }
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-bar {
+        justify-self: left;
+        padding: 0;
+    }
+    
+    .profile-details {
+        width: 350px;
+        box-sizing: border-box;
+    }
+
+    .profile-highest-user {
+        width: 350px;
+    }
+
+    .profile-most-recent {
+        width: 350px;
+    }
+    
+}
