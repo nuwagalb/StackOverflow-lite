@@ -321,5 +321,14 @@ footer {
     .recent-questions {
         width: 350px;
     }
+
+    form {
+        width: 350px;
+    }
+
+    .button button {
+        margin-left: 140px;
+        width: 200px
+    }
     
 }
