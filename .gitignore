@@ -1,0 +1,8 @@
+__pycache__
+.cache
+api/resources/__init__.pyc
+api/resources/answers.pyc
+api/resources/questions.pyc
+api/resources/users.pyc
+api/tests/__pycache__
+api/tests/__init__.pyc
