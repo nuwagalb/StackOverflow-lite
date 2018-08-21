@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f4f4;
+    height: 100%;
 }
 
 /*global*/
@@ -13,6 +14,16 @@ h3 {
 
 li {
     display: inline;
+}
+
+ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+ul li a {
+    color: blue;
+    font-size: 15px;
 }
 
 a {
@@ -27,13 +38,29 @@ a:hover {
 }
 
 input {
-    width: 210px;
+    padding-left: 10px;
+    width: 250px;
     height: 30px;
     box-sizing: border-box;
 }
 
+input:focus {
+    outline: none;
+}
+
+textarea {
+    padding-left: 10px;
+}
+textarea:focus {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
 /**container*/
 .container {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     display: grid;
@@ -69,13 +96,31 @@ input {
 form {
     padding-top: 50px;
     width: 600px;
-    margin-top: 80px;
+    margin-top: 35px;
     background: #35424a;
     justify-self: center;
     display: grid;
     justify-content: center;
     grid-row-gap: 15px;
     box-sizing: border-box;
+}
+
+.form-padding {
+    padding-left: 50px;
+}
+
+.form-title p {
+    font-size: 14px;
+    padding-left: 5px;
+    margin: 10 0 0 0;
+    box-sizing: border-box;
+}
+
+h4 {
+    padding: 0;
+    columns:  #FF9966;
+    text-align: center;
+    font-size: 15px;
 }
 
 .sign-in-form {
@@ -93,7 +138,8 @@ form {
 
 /*Questions*/
 .current-question {
-    border: 2px solid #35424a;
+    overflow: auto;
+    border: 1px solid #35424a;
     justify-self: center;
     margin-top: 30px;
     width: 600px;
@@ -108,7 +154,23 @@ form {
     color: #FF9966;
 }
 
+.current-question h5 {
+    padding-left: 20px;
+    font-size: 15px;
+    color: #35424a;
+    margin: 0;
+}
+
+.current-question li {
+    color: blue;
+}
+
+.current-question span {
+    color: blue;
+}
+
 .recent-questions {
+    overflow: auto;
     border: 2px solid #35424a;
     justify-self: center;
     margin-top: 30px;
@@ -124,6 +186,7 @@ form {
     color: #FF9966;
     box-sizing: border-box;
 }
+
 
 .profile-details {
     border: 2px solid #35424a;
@@ -183,7 +246,7 @@ form {
 }
 
 .form-title {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color:#FF9966;
     box-sizing: border-box;
 }
@@ -221,18 +284,12 @@ form {
     box-sizing: border-box;
 }
 
-.password input {
-    width: 210px;
-    box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .button button{
     border: none;
     color: #f4f4f4; 
     background-color: #e8491d;
     height: 30px;
-    width: 348px;
+    width: 388px;
     box-sizing: border-box;
 }
 
@@ -241,6 +298,20 @@ form {
     width: 100px;
     box-sizing: border-box;
 }
+
+.current-question a {
+    font-weight: bolder;
+    font-size: 13px;
+    border: none;
+    color: #f4f4f4; 
+    background-color: #e8491d;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 380px;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+} 
 
 .sign-up-title {
     margin-left: 50px;
@@ -256,6 +327,7 @@ form {
 }
 
 .question-field {
+    text-align: left;
     height: 70px;
     width: 360px;
     box-sizing: border-box;
@@ -265,12 +337,13 @@ form {
 footer {
     text-align: center;
     background:  #35424a;
-    margin-top: 121px;
+    margin-top: 65px;
     box-sizing: border-box;
 }
 
 .footer {
-    margin-top: 116px;
+    margin-top: 128px;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 620px) {
