@@ -1,7 +1,6 @@
 from flask import jsonify, json, make_response
 from app import app
 import unittest
-#from api.resources.questions import Question
 class AppTestCase(unittest.TestCase):
     def setUp(self):
         """Sets up a new wsgi instance for the application"""
