@@ -1,5 +1,5 @@
 from flask import Flask, request, json, jsonify, make_response
-from api.resources.questions import Question
+#from api.resources.questions import Question
 
 app = Flask(__name__)
 

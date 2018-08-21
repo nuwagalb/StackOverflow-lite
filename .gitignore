@@ -6,3 +6,6 @@ api/resources/questions.pyc
 api/resources/users.pyc
 api/tests/__pycache__
 api/tests/__init__.pyc
+
+
+git rm -rf path/to/folder --cached

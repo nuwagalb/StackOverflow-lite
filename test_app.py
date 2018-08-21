@@ -1,12 +1,12 @@
 from flask import jsonify, json, make_response
 from app import app
 import unittest
-from api.resources.questions import Question
+#from api.resources.questions import Question
 class AppTestCase(unittest.TestCase):
     def setUp(self):
         """Sets up a new wsgi instance for the application"""
         self.app = app.test_client()
-        self.question = Question()
+        #self.question = Question()
 
     def test_for_undefined_user_id(self):
         """Tests for missing user_id key"""
