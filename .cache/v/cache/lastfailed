@@ -1,5 +1,10 @@
 {
   "api/tests/test_answers.py": true, 
+  "api/tests/test_base_function.py::BaseFunctionTestCase::test_generate_id_method_increments_id_by_one": true, 
+  "api/tests/test_base_function.py::BaseFunctionTestCase::test_save_method": true, 
+  "api/tests/test_base_function.py::BaseFunctionsTestCase::test_generate_id_method_increments_id_by_one": true, 
+  "api/tests/test_post_question.py::PostQuestionApiTestCase::test_for_user_id_key_passed_as_a_float": true, 
   "api/tests/test_questions.py": true, 
-  "api/tests/test_user.py": true
+  "api/tests/test_user.py": true, 
+  "api/tests/test_users.py": true
 }

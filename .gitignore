@@ -1,0 +1,8 @@
+.cache
+api/tests/__pycache__
+api/tests/__init__.pyc
+api/__init__.pyc
+app.pyc
+api/resources/__init__.pyc
+api/resources/base_function.pyc
+api/resources/question.pyc

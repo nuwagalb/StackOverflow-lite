@@ -10,4 +10,4 @@ class Question:
         """Initializes the Question class"""
         self.id = 0
         self.user_id = 0
-        self.details = ''
+        self.question_details = ''
