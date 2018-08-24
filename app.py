@@ -2,7 +2,7 @@ from flask import Flask, request, json, jsonify, make_response, abort
 from api.resources.questions.question import Question
 from api.resources.answers.answer import Answer
 
-application = app = Flask(__name__)
+app = Flask(__name__)
 
 @app.route('/api/v1/questions', methods=['POST'])
 def post_a_question():
