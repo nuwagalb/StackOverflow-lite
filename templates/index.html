@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Andela Challenge 2</title>
+    </head>
+    <body>
+        <h3>My end points</h3>
+        <table>
+            <tr>
+                <td>API ENDPOINT</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>ACTION</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                <td><a href="#">/api/v1/questions</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>POST A QUESTION</td>
+                <td></td>
+                <td></td>
+                <td>
+                    {
+                        "user_id": 1,
+                        "question_details": "What is life?"
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">/api/v1/questions</a></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>GET A QUESTION</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    {
+                        "id": 1
+                        "user_id": 1
+                        "question_details": "What is life?"
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">/api/v1/questions</a></td>
+                <td></td>
+                <td></td>
+                <td>GET A LIST OF QUESTIONS</td>
+                <td></td>
+                <td></td>
+                <td>
+                    {
+                        {
+                            "id": 1
+                            "user_id": 1
+                            "question_details": "What is life?"
+                        },
+                         {
+                            "id": 2
+                            "user_id": 2
+                            "question_details": "What is death?"
+                        }
+                    }
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">/api/v1/2/answers</a></td>
+                <td></td>
+                <td></td>
+                <td>POST AN ANSWER TO A QUESTION</td>
+                <td></td>
+                <td></td>
+                <td>
+                     {
+                        "id": 1
+                        "question_id": 2
+                        "answer_details": "What is life?"
+                    }
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

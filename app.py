@@ -1,4 +1,4 @@
-from flask import Flask, request, json, jsonify, make_response, abort
+from flask import Flask, request, json, jsonify, render_template, url_for
 from api.resources.questions.question import Question
 from api.resources.answers.answer import Answer
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/' , methods=['POST', 'GET'])
 def index():
-    return 'hello'
+    render_template(index.html)
 
 @app.route('/api/v1/questions', methods=['POST'])
 def post_a_question():
