@@ -1,6 +1,0 @@
-{
-  "api/tests/test_get_question.py::GetQuestionApiTestCase::test_for_successful_return_of_record": true, 
-  "api/tests/test_question.py::QuestionTestCase::test_find_method_returns_question_if_it_exists": true, 
-  "api/tests/test_question.py::QuestionTestCase::test_save_method_appends_id_to_record_and_saves_it_in_table": true, 
-  "api/tests/test_question.py::QuestionTestCase::test_save_method_returns_error_on_empty_inputs": true
-}
