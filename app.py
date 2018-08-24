@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/' , methods=['POST', 'GET'])
 def index():
-    render_template(index.html)
+    return render_template(index.html)
 
 @app.route('/api/v1/questions', methods=['POST'])
 def post_a_question():
