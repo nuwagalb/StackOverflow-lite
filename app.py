@@ -4,6 +4,10 @@ from api.resources.answers.answer import Answer
 
 app = Flask(__name__)
 
+@app.route('/' , methods=['POST', 'GET'])
+def index():
+    return 'hello'
+
 @app.route('/api/v1/questions', methods=['POST'])
 def post_a_question():
 
