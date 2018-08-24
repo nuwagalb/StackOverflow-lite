@@ -1,10 +1,6 @@
 {
-  "api/tests/test_answers.py": true, 
-  "api/tests/test_base_function.py::BaseFunctionTestCase::test_generate_id_method_increments_id_by_one": true, 
-  "api/tests/test_base_function.py::BaseFunctionTestCase::test_save_method": true, 
-  "api/tests/test_base_function.py::BaseFunctionsTestCase::test_generate_id_method_increments_id_by_one": true, 
-  "api/tests/test_post_question.py::PostQuestionApiTestCase::test_for_user_id_key_passed_as_a_float": true, 
-  "api/tests/test_questions.py": true, 
-  "api/tests/test_user.py": true, 
-  "api/tests/test_users.py": true
+  "api/tests/test_get_question.py::GetQuestionApiTestCase::test_for_successful_return_of_record": true, 
+  "api/tests/test_question.py::QuestionTestCase::test_find_method_returns_question_if_it_exists": true, 
+  "api/tests/test_question.py::QuestionTestCase::test_save_method_appends_id_to_record_and_saves_it_in_table": true, 
+  "api/tests/test_question.py::QuestionTestCase::test_save_method_returns_error_on_empty_inputs": true
 }

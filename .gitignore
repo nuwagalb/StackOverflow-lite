@@ -6,3 +6,5 @@ app.pyc
 api/resources/__init__.pyc
 api/resources/base_function.pyc
 api/resources/question.pyc
+.coverage
+api/__pycache__
