@@ -1,0 +1,18 @@
+language: python
+python: 
+  - 3.6.5
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+before-script:
+  - git clone https://github.com/nuwagalb/level-up.git
+  - cd level-up
+  - git checkout -qf master
+  #- pytest
+  #- cd -
+# command to run tests
+script:
+  #- pytest app/test_sign_up.py
+  - coverage run app.py
+  - coverage report -m
+  - coveralls
