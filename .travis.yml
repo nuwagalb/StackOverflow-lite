@@ -6,7 +6,7 @@ install:
   - pip install -r requirements.txt
 before-script:
   - git clone https://github.com/nuwagalb/StackOverflow-lite.git
-  - cd level-up
+  - cd StackOverflow-lite
   - git checkout -qf v1
   #- pytest
   #- cd -
