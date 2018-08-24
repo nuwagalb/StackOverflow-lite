@@ -81,4 +81,4 @@ def post_an_answer(questionId):
                 return jsonify({'message': 'Answer could not be added'})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
