@@ -5,7 +5,7 @@ python:
 install:
   - pip install -r requirements.txt
 before-script:
-  - git clone https://github.com/nuwagalb/level-up.git
+  - git clone https://github.com/nuwagalb/StackOverflow-lite.git
   - cd level-up
   - git checkout -qf master
   #- pytest
