@@ -1,15 +1,21 @@
 from flask import Flask, request, json, jsonify, render_template, url_for
 from api.resources.questions.question import Question
 from api.resources.answers.answer import Answer
+from coverage import Coverage
+import unittest
 
 app = Flask(__name__)
 
+#index page route
 @app.route('/' , methods=['POST', 'GET'])
 def index():
+    """returns the index page"""
     return render_template('index.html')
 
+#route for posting a question
 @app.route('/api/v1/questions', methods=['POST'])
 def post_a_question():
+    """returns the question that has been posted"""
 
     json_data = request.get_json()
 
@@ -25,19 +31,18 @@ def post_a_question():
         response_object = {'message': 'Question has no specified question_details'}
         return jsonify(response_object), 400
 
-    #update class Question clas svariable
+    #update Question resource class variable
     question_tb = Question(json_data['user_id'], json_data['question_details'])
 
-    #save the new question
-    question_tb.save()
-
-    #return details that were just saved
-    result = Question.all_questions[-1]
-
+    #save the new question and return it's details
+    if question_tb.save():
+        result = Question.all_questions[-1]
     return jsonify(result), 201
 
+#route for returning a single question
 @app.route('/api/v1/questions/<int:questionId>', methods=['GET'])
 def get_a_question(questionId):
+    """returns a single question"""
 
     question_id = questionId
     for question in Question.all_questions:
@@ -46,16 +51,19 @@ def get_a_question(questionId):
         
     response_object = {'message': 'Record was not found'}
     return jsonify(response_object), 404
-            
+
+#route for getting all questions            
 @app.route('/api/v1/questions', methods=['GET'])
 def get_all_question():
+    """returns all questions"""
 
     if Question.all_questions:
         return jsonify(Question.all_questions), 200
 
+#route for posting an answer to a specified question
 @app.route('/api/v1/<int:questionId>/answers', methods=['POST'])
 def post_an_answer(questionId):
-    question_id = questionId
+    """returns the answer posted for a given question that was asked"""
     json_data = request.get_json()
 
     if 'user_id' not in json_data:
@@ -73,7 +81,7 @@ def post_an_answer(questionId):
     #search if question_id exists_amongst_all_our_questions, then you can post an answer
     if Question.all_questions:
         for question in Question.all_questions:
-            if question.get('id') == question_id:
+            if question.get('id') == questionId:
                 answer_tb = Answer(json_data['user_id'], json_data['answer_details'])
                 #save new answer
                 answer_tb.save()
@@ -85,4 +93,4 @@ def post_an_answer(questionId):
                 return jsonify({'message': 'Answer could not be added'})
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

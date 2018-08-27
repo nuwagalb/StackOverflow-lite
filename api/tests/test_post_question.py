@@ -1,6 +1,6 @@
-from flask import jsonify, json, make_response
-from app import app
 import unittest
+from flask import jsonify, json
+from app import app
 
 class PostQuestionApiTestCase(unittest.TestCase):
     def setUp(self):

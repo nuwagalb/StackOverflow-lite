@@ -9,28 +9,17 @@ class Question:
     def __init__(self, user_id, question):
         """Initializes the Question class"""
         self.user_id = user_id
-        self.question_details = question
+        self.details = question
 
     def save(self):
-        question_with_id = {}
+        """returns true if question was successfully added to db"""
         if not Question.all_questions:
              id = 1
         else:
             id = self.all_questions[-1].get('id') + 1
-        question_with_id['id'] = id
-        question_with_id['user_id'] = self.user_id
-        question_with_id['question_details'] = self.question_details
-        self.all_questions.append(question_with_id)
+
+        self.all_questions.append(
+            {'id': id, 'user_id': self.user_id, 'details': self.details}
+        )
         return True
-
-    def find(self, question_id):
-        self.search_question_id = question_id
-        if self.search_question_id:
-            for question in self.all_questions:
-                if question.get('id') == self.search_question_id:
-                    return question
-                else:
-                    return 'Question does not exist'
-                    
-
 

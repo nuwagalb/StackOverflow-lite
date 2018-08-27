@@ -8,3 +8,6 @@ api/resources/base_function.pyc
 api/resources/question.pyc
 .coverage
 api/__pycache__
+api/resources/__pycache__
+api/resources/answers/__pycache__
+api/resources/answers/__init__.pyc
