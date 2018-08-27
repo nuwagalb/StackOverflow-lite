@@ -335,6 +335,8 @@ h4 {
 
 /*footer*/
 footer {
+    bottom: 0;
+    width: 100%;
     text-align: center;
     background:  #35424a;
     margin-top: 65px;
@@ -344,6 +346,7 @@ footer {
 .footer {
     margin-top: 128px;
     box-sizing: border-box;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 620px) {
