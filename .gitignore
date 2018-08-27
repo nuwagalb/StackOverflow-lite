@@ -12,3 +12,4 @@ api/resources/__pycache__
 api/resources/answers/__pycache__
 api/resources/answers/__init__.pyc
 api/resources/questions/__pycache__
+venv
